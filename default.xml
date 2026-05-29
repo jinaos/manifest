@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Remote definition: where to fetch code from -->
+  <remote name="github"
+          fetch="https://github.com/"
+          review="https://github.com/" />
+
+  <!-- Default revision: which branch to check out -->
+  <default remote="github"
+           revision="main"
+           sync-j="4" />
+
+  <!-- Core JinaOS project -->
+  <project path="jinaos" name="jinaos/jinaos" />
+
+  <!-- Build system configuration -->
+  <project path="build" name="jinaos/buildroot-config" />
+
+  <!-- Linux kernel source -->
+  <project path="kernel" name="torvalds/linux" />
+
+  <project path="device/tecno/spark8" name="jinaos/device-tecno-spark8" />
+
+  <!-- Bootloader utilities (flash scripts) -->
+  <project path="bootloader" name="jinaos/bootloader" />
+
+</manifest>
